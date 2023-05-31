@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include cnap *.css
+recursive-include cnap *.csv
+recursive-include cnap *.html
+recursive-include cnap *.ico
+recursive-include cnap *.js
+recursive-include cnap *.json
+recursive-include cnap *.md
+recursive-include cnap *.png
+recursive-include cnap *.py
+recursive-include cnap *.svg
+recursive-include cnap *.txt
+recursive-exclude cnap *.pyc
