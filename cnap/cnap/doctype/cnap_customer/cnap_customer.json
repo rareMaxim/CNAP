@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "beta": 1,
+ "creation": "2023-05-31 23:07:21.890687",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "\u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447_tab",
+  "\u0456\u043c\u044f_\u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0430_section",
+  "last_name",
+  "full_name",
+  "column_break_nuvw",
+  "first_name",
+  "column_break_mwtb",
+  "middle_name",
+  "section_break_joss",
+  "phone",
+  "column_break_cnyi",
+  "email",
+  "\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438_tab",
+  "\u043e\u043b\u0442\u043b\u043e",
+  "column_break_grde"
+ ],
+ "fields": [
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "\u041f\u0440\u0438\u0437\u0432\u0438\u0449\u0435",
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "\u0406\u043c'\u044f",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "\u041f\u043e-\u0411\u0430\u0442\u044c\u043a\u043e\u0432\u0456"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u041f\u0406\u0411 \u043f\u043e\u0432\u043d\u0435",
+   "read_only": 1
+  },
+  {
+   "fieldname": "\u0456\u043c\u044f_\u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0430_section",
+   "fieldtype": "Section Break",
+   "label": "\u0406\u043c'\u044f \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0430"
+  },
+  {
+   "fieldname": "column_break_nuvw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mwtb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_joss",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "+380-",
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "\u041d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0443"
+  },
+  {
+   "fieldname": "column_break_cnyi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "\u0415\u043b. \u043f\u043e\u0448\u0442\u0430",
+   "options": "Email"
+  },
+  {
+   "fieldname": "\u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0412\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447"
+  },
+  {
+   "fieldname": "\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438"
+  },
+  {
+   "default": "\u0432\u0430\u043f\u0440\u043e\u043b\u0434",
+   "fieldname": "\u043e\u043b\u0442\u043b\u043e",
+   "fieldtype": "Barcode",
+   "label": "\u043e\u043b\u0442\u043b\u043e"
+  },
+  {
+   "fieldname": "column_break_grde",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-01 00:23:19.515094",
+ "modified_by": "Administrator",
+ "module": "Cnap",
+ "name": "CNAP Customer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

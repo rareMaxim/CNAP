@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-31 23:32:17.200999",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "office_name",
+  "email",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "office_name",
+   "fieldtype": "Data",
+   "label": "\u041d\u0430\u0437\u0432\u0430 \u0426\u041d\u0410\u041f"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "\u0415\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0430 \u043f\u043e\u0448\u0442\u0430",
+   "options": "Email"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\u041f\u0440\u0430\u0446\u044e\u0454\n\u041f\u0440\u0438\u0437\u0443\u043f\u0438\u043d\u0435\u043d\u0438\u0439\n\u041d\u0435 \u043f\u0440\u0430\u0446\u044e\u0454"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-31 23:46:24.785406",
+ "modified_by": "Administrator",
+ "module": "Cnap",
+ "name": "CNAP Office",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "custom": 1,
+   "title": "\u041f\u0440\u0430\u0446\u044e\u0454"
+  },
+  {
+   "color": "Yellow",
+   "custom": 1,
+   "title": "\u041f\u0440\u0438\u0437\u0443\u043f\u0438\u043d\u0435\u043d\u0438\u0439"
+  },
+  {
+   "color": "Red",
+   "custom": 1,
+   "title": "\u041d\u0435 \u043f\u0440\u0430\u0446\u044e\u0454"
+  }
+ ],
+ "title_field": "office_name"
+}

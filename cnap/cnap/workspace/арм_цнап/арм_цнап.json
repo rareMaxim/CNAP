@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"\u0410\u0420\u041c \u0426\u041d\u0410\u041f\"}}]",
+ "content": "[{\"id\":\"EFGfiDPW1p\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\u0410\u0420\u041c \u0426\u041d\u0410\u041f</span>\",\"col\":12}},{\"id\":\"MLDjjHamSs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0414\u043e\u0434\u0430\u0442\u0438 \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0430\",\"col\":3}},{\"id\":\"EppxDuwIE7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0412\u0441\u0456 \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0456\",\"col\":3}}]",
  "creation": "2023-05-31 22:00:55.509880",
  "custom_blocks": [],
  "docstatus": 0,
@@ -12,7 +12,7 @@
  "is_hidden": 0,
  "label": "\u0410\u0420\u041c \u0426\u041d\u0410\u041f",
  "links": [],
- "modified": "2023-05-31 22:34:47.294386",
+ "modified": "2023-06-01 00:16:13.733528",
  "modified_by": "Administrator",
  "module": "Cnap",
  "name": "\u0410\u0420\u041c \u0426\u041d\u0410\u041f",
@@ -22,7 +22,25 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 21.0,
- "shortcuts": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "format": "{}",
+   "label": "\u0414\u043e\u0434\u0430\u0442\u0438 \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0430",
+   "link_to": "CNAP Customer",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "\u0412\u0441\u0456 \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0456",
+   "link_to": "CNAP Customer",
+   "stats_filter": "{\"name\":[\"is\",\"set\"]}",
+   "type": "DocType"
+  }
+ ],
  "title": "\u0410\u0420\u041c \u0426\u041d\u0410\u041f"
 }
