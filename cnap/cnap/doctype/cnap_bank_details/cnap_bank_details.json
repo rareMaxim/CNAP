@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2023-06-01 19:27:18.351229",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "iban",
+  "recipient",
+  "pay_data",
+  "column_break_csgl",
+  "recipient_bank",
+  "recipient_bank_cod",
+  "mfo",
+  "coast"
+ ],
+ "fields": [
+  {
+   "default": "UA",
+   "fieldname": "iban",
+   "fieldtype": "Data",
+   "label": "\u0420\u043e\u0437\u0440\u0430\u0445\u0443\u043d\u043a\u043e\u0432\u0438\u0439 \u0440\u0430\u0445\u0443\u043d\u043e\u043a",
+   "length": 34
+  },
+  {
+   "fieldname": "recipient",
+   "fieldtype": "Data",
+   "label": "\u041e\u0442\u0440\u0438\u043c\u0443\u0432\u0430\u0447"
+  },
+  {
+   "fieldname": "recipient_bank",
+   "fieldtype": "Data",
+   "label": "\u0411\u0430\u043d\u043a \u043e\u0442\u0440\u0438\u043c\u0443\u0432\u0430\u0447\u0430"
+  },
+  {
+   "fieldname": "recipient_bank_cod",
+   "fieldtype": "Data",
+   "label": "\u041a\u043e\u0434 \u0431\u0430\u043d\u043a\u0443 \u043e\u0442\u0440\u0438\u043c\u0443\u0432\u0430\u0447\u0430"
+  },
+  {
+   "fieldname": "mfo",
+   "fieldtype": "Data",
+   "label": "\u041c\u0424\u041e \u043e\u0442\u0440\u0438\u043c\u0443\u0432\u0430\u0447\u0430"
+  },
+  {
+   "fieldname": "pay_data",
+   "fieldtype": "Data",
+   "label": "\u041f\u0440\u0438\u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f \u043f\u043b\u0430\u0442\u0435\u0436\u0443"
+  },
+  {
+   "fieldname": "column_break_csgl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "coast",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u0412\u0430\u0440\u0442\u0456\u0441\u0442\u044c",
+   "options": "UAH"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-01 19:56:29.954252",
+ "modified_by": "Administrator",
+ "module": "Cnap",
+ "name": "CNAP Bank Details",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

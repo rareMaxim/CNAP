@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-01 20:13:12.132131",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bank_details",
+  "duration_type",
+  "duration"
+ ],
+ "fields": [
+  {
+   "fieldname": "bank_details",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0420\u0430\u0445\u0443\u043d\u043e\u043a",
+   "options": "CNAP Bank Details"
+  },
+  {
+   "fieldname": "duration_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u0422\u0438\u043f \u0442\u0435\u0440\u043c\u0456\u043d\u0443",
+   "options": "\u0412\u0456\u0434\u0440\u0430\u0437\u0443\n\u041d\u0435 \u0437\u0430\u0434\u0430\u043d\u043e\n\u0413\u043e\u0434\u0438\u043d\u0438\n\u0420\u043e\u0431\u043e\u0447\u0456 \u0434\u043d\u0456 (\u043d\u0435\u0432\u043a\u043b\u044e\u0447\u043d\u043e)\n\u041a\u0430\u043b\u0435\u043d\u0434\u0430\u0440\u043d\u0456 \u0434\u043d\u0456\n\u041c\u0456\u0441\u044f\u0446\n\u0420\u043e\u0431\u043e\u0447\u0456 \u0434\u043d\u0456 (\u0432\u043a\u043b\u044e\u0447\u043d\u043e)"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "\u0422\u0435\u0440\u043c\u0456\u043d"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-01 20:17:01.640954",
+ "modified_by": "Administrator",
+ "module": "Cnap",
+ "name": "CNAP Service Coast",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
