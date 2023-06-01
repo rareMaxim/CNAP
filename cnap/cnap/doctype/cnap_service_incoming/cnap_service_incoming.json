@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-01 22:16:38.825466",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "service",
+  "test"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "\u041d\u043e\u043c\u0435\u0440"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "\u041f\u043e\u0441\u043b\u0443\u0433\u0430",
+   "options": "CNAP Service"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Link",
+   "label": "test",
+   "options": "CNAP Service Coast"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-02 01:13:34.922531",
+ "modified_by": "Administrator",
+ "module": "Cnap",
+ "name": "CNAP Service Incoming",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -13,10 +13,13 @@
   "identifier",
   "column_break_bxfz",
   "short_description_plain",
-  "\u0441\u0443\u0431\u0454\u043a\u0442_\u043d\u0430\u0434\u0430\u043d\u043d\u044f_\u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0457_\u043f\u043e\u0441\u043b\u0443\u0433\u0438",
-  "amended_from",
+  "service_owner",
   "duration_tab",
-  "duration"
+  "duration",
+  "web_tab",
+  "thematic_area",
+  "column_break_qhnl",
+  "sector"
  ],
  "fields": [
   {
@@ -41,21 +44,6 @@
    "label": "\u041a\u043e\u0440\u043e\u0442\u043a\u043e \u043f\u0440\u043e \u043f\u043e\u0441\u043b\u0443\u0433\u0443"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "CNAP Service",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "\u0441\u0443\u0431\u0454\u043a\u0442_\u043d\u0430\u0434\u0430\u043d\u043d\u044f_\u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0457_\u043f\u043e\u0441\u043b\u0443\u0433\u0438",
-   "fieldtype": "Link",
-   "label": "\u0421\u0443\u0431'\u0454\u043a\u0442 \u043d\u0430\u0434\u0430\u043d\u043d\u044f \u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0457 \u043f\u043e\u0441\u043b\u0443\u0433\u0438",
-   "options": "CNAP OrgStructure"
-  },
-  {
    "fieldname": "duration",
    "fieldtype": "Table",
    "label": "\u0422\u0435\u0440\u043c\u0456\u043d\u0438 \u0432\u0438\u043a\u043e\u043d\u0430\u043d\u043d\u044f",
@@ -69,12 +57,41 @@
    "fieldname": "duration_tab",
    "fieldtype": "Tab Break",
    "label": "Duration"
+  },
+  {
+   "fieldname": "service_owner",
+   "fieldtype": "Link",
+   "label": "\u0421\u0443\u0431'\u0454\u043a\u0442 \u043d\u0430\u0434\u0430\u043d\u043d\u044f \u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0457 \u043f\u043e\u0441\u043b\u0443\u0433\u0438",
+   "options": "CNAP OrgStructure"
+  },
+  {
+   "fieldname": "web_tab",
+   "fieldtype": "Tab Break",
+   "label": "Web"
+  },
+  {
+   "fieldname": "column_break_qhnl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0456\u044f \u043f\u043e\u0441\u043b\u0443\u0433\u0438",
+   "options": "CNAP Sector"
+  },
+  {
+   "fieldname": "thematic_area",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0422\u0435\u043c\u0430\u0442\u0438\u0447\u043d\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+   "options": "CNAP Thematic area"
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2023-06-01 20:31:11.858574",
+ "modified": "2023-06-02 00:45:24.497139",
  "modified_by": "Administrator",
  "module": "Cnap",
  "name": "CNAP Service",
@@ -94,20 +111,10 @@
    "write": 1
   }
  ],
+ "search_fields": "identifier,service_owner",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [
-  {
-   "color": "Gray",
-   "title": "C\u0442\u0432\u043e\u0440\u0435\u043d\u043e"
-  },
-  {
-   "color": "Yellow",
-   "title": "\u041f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0430"
-  },
-  {
-   "color": "Green",
-   "title": "\u041e\u043f\u0443\u0431\u043b\u0456\u043a\u043e\u0432\u0430\u043d\u043e"
-  }
- ]
+ "states": []
 }

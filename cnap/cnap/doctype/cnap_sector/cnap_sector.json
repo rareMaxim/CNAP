@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2023-06-02 00:29:36.784135",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "thematic_area"
+ ],
+ "fields": [
+  {
+   "fieldname": "thematic_area",
+   "fieldtype": "Link",
+   "label": "\u0422\u0435\u043c\u0430\u0442\u0438\u0447\u043d\u0430 \u043e\u0431\u043b\u0430\u0441\u0442\u044c",
+   "options": "CNAP Thematic area"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-02 00:30:21.675194",
+ "modified_by": "Administrator",
+ "module": "Cnap",
+ "name": "CNAP Sector",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
