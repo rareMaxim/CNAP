@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
+ "autoname": "naming_series:naming_series",
  "creation": "2023-06-01 22:16:38.825466",
  "default_view": "List",
  "doctype": "DocType",
@@ -10,7 +10,7 @@
  "field_order": [
   "naming_series",
   "service",
-  "test"
+  "duration"
  ],
  "fields": [
   {
@@ -25,15 +25,15 @@
    "options": "CNAP Service"
   },
   {
-   "fieldname": "test",
+   "fieldname": "duration",
    "fieldtype": "Link",
-   "label": "test",
+   "label": "\u0422\u0435\u0440\u043c\u0456\u043d",
    "options": "CNAP Service Coast"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-02 01:13:34.922531",
+ "modified": "2023-06-02 17:01:09.333733",
  "modified_by": "Administrator",
  "module": "Cnap",
  "name": "CNAP Service Incoming",
