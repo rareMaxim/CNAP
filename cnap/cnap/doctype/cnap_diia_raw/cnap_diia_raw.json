@@ -67,7 +67,7 @@
   },
   {
    "fieldname": "keyword",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "keyword"
   },
@@ -103,7 +103,7 @@
   },
   {
    "fieldname": "legal_base",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "legal_base"
   },
   {
@@ -153,7 +153,7 @@
   },
   {
    "fieldname": "input",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "input"
   },
   {
@@ -168,12 +168,12 @@
   },
   {
    "fieldname": "processing_durations",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "processing_durations"
   },
   {
    "fieldname": "costs",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "costs"
   },
   {
@@ -184,7 +184,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-06 01:08:08.116365",
+ "modified": "2023-06-06 01:39:51.401952",
  "modified_by": "Administrator",
  "module": "Cnap",
  "name": "CNAP Diia RAW",
