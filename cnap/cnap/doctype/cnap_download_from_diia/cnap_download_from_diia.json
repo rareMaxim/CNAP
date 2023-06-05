@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2023-06-05 20:16:11.622659",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "url",
+  "json"
+ ],
+ "fields": [
+  {
+   "default": "https://guide.diia.gov.ua/register/download/json/",
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "\u041f\u043e\u0441\u0438\u043b\u0430\u043d\u043d\u044f"
+  },
+  {
+   "fieldname": "json",
+   "fieldtype": "JSON",
+   "label": "response"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-06-05 23:59:29.821153",
+ "modified_by": "Administrator",
+ "module": "Cnap",
+ "name": "CNAP Download From Diia",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,210 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:identifier",
+ "beta": 1,
+ "creation": "2023-06-06 00:24:51.546396",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "identifier",
+  "thematic_area",
+  "sector",
+  "sname",
+  "level",
+  "keyword",
+  "short_description_plain",
+  "spatial",
+  "moderation_status",
+  "created_at",
+  "sowner",
+  "service_provider",
+  "legal_base",
+  "refusal_grounds",
+  "applicant_type",
+  "access_link",
+  "regulatory_documents",
+  "events",
+  "refusal_appeal_person",
+  "is_appealed_in_court",
+  "refusal_appeal_rules",
+  "produces",
+  "input",
+  "application_ways",
+  "receiving_ways",
+  "processing_durations",
+  "costs",
+  "variations"
+ ],
+ "fields": [
+  {
+   "fieldname": "identifier",
+   "fieldtype": "Data",
+   "label": "identifier",
+   "unique": 1
+  },
+  {
+   "fieldname": "thematic_area",
+   "fieldtype": "Data",
+   "label": "thematic_area"
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Data",
+   "label": "sector"
+  },
+  {
+   "fieldname": "sname",
+   "fieldtype": "Small Text",
+   "label": "name"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Data",
+   "label": "level"
+  },
+  {
+   "fieldname": "keyword",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "keyword"
+  },
+  {
+   "fieldname": "short_description_plain",
+   "fieldtype": "Small Text",
+   "label": "short_description_plain"
+  },
+  {
+   "fieldname": "spatial",
+   "fieldtype": "Data",
+   "label": "spatial"
+  },
+  {
+   "fieldname": "moderation_status",
+   "fieldtype": "Data",
+   "label": "moderation_status"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Data",
+   "label": "created_at"
+  },
+  {
+   "fieldname": "sowner",
+   "fieldtype": "Data",
+   "label": "owner"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "JSON",
+   "label": "service_provider"
+  },
+  {
+   "fieldname": "legal_base",
+   "fieldtype": "Data",
+   "label": "legal_base"
+  },
+  {
+   "fieldname": "refusal_grounds",
+   "fieldtype": "JSON",
+   "label": "refusal_grounds"
+  },
+  {
+   "fieldname": "applicant_type",
+   "fieldtype": "JSON",
+   "label": "applicant_type"
+  },
+  {
+   "fieldname": "access_link",
+   "fieldtype": "Data",
+   "label": "access_link"
+  },
+  {
+   "fieldname": "regulatory_documents",
+   "fieldtype": "JSON",
+   "label": "regulatory_documents"
+  },
+  {
+   "fieldname": "events",
+   "fieldtype": "JSON",
+   "label": "events"
+  },
+  {
+   "fieldname": "refusal_appeal_person",
+   "fieldtype": "JSON",
+   "label": "refusal_appeal_person"
+  },
+  {
+   "fieldname": "is_appealed_in_court",
+   "fieldtype": "Data",
+   "label": "is_appealed_in_court"
+  },
+  {
+   "fieldname": "refusal_appeal_rules",
+   "fieldtype": "JSON",
+   "label": "refusal_appeal_rules"
+  },
+  {
+   "fieldname": "produces",
+   "fieldtype": "JSON",
+   "label": "produces"
+  },
+  {
+   "fieldname": "input",
+   "fieldtype": "Data",
+   "label": "input"
+  },
+  {
+   "fieldname": "application_ways",
+   "fieldtype": "JSON",
+   "label": "application_ways"
+  },
+  {
+   "fieldname": "receiving_ways",
+   "fieldtype": "JSON",
+   "label": "receiving_ways"
+  },
+  {
+   "fieldname": "processing_durations",
+   "fieldtype": "Data",
+   "label": "processing_durations"
+  },
+  {
+   "fieldname": "costs",
+   "fieldtype": "Data",
+   "label": "costs"
+  },
+  {
+   "fieldname": "variations",
+   "fieldtype": "JSON",
+   "label": "variations"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-06 01:08:08.116365",
+ "modified_by": "Administrator",
+ "module": "Cnap",
+ "name": "CNAP Diia RAW",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
