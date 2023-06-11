@@ -1,32 +1,31 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:doc",
- "creation": "2023-06-02 10:32:48.817618",
+ "autoname": "field:title",
+ "creation": "2023-06-11 13:46:18.759752",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "doc"
+  "title"
  ],
  "fields": [
   {
-   "allow_in_quick_entry": 1,
-   "fieldname": "doc",
+   "fieldname": "title",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442",
+   "label": "\u0422\u0438\u043f \u0437\u0430\u044f\u0432\u043d\u0438\u043a\u0430",
    "reqd": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-02 10:44:55.399602",
+ "modified": "2023-06-11 13:46:18.759752",
  "modified_by": "Administrator",
  "module": "Cnap",
- "name": "CNAP Documents",
+ "name": "Cnap Applicant Type",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

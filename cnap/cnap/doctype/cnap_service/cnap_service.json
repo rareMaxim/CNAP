@@ -23,8 +23,21 @@
   "thematic_area",
   "column_break_qhnl",
   "sector",
-  "\u043f\u0435\u0440\u0435\u043b\u0456\u043a_\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0456\u0432_tab",
-  "docs"
+  "tab_5_tab",
+  "\u0434\u0435_\u043e\u0442\u0440\u0438\u043c\u0430\u0442\u0438_section",
+  "service_provider",
+  "\u044f\u043a_\u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438_\u043f\u043e\u0441\u043b\u0443\u0433\u0443_section",
+  "how_order",
+  "\u0445\u0442\u043e_\u043c\u043e\u0436\u0435_\u0437\u0432\u0435\u0440\u043d\u0443\u0442\u0438\u0441\u044f_section",
+  "applicant_type",
+  "\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438_\u0449\u043e_\u043d\u0435\u043e\u0431\u0445\u0456\u0434\u043d\u043e_\u043d\u0430\u0434\u0430\u0442\u0438_\u0434\u043b\u044f_\u043e\u0442\u0440\u0438\u043c\u0430\u043d\u043d\u044f_\u043f\u043e\u0441\u043b\u0443\u0433\u0438_section",
+  "docs",
+  "\u0443\u043c\u043e\u0432\u0438_\u0456_\u0432\u0438\u043f\u0430\u0434\u043a\u0438_\u043d\u0430\u0434\u0430\u043d\u043d\u044f_section",
+  "legal_base",
+  "\u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442_\u0442\u0430_\u0441\u043f\u043e\u0441\u043e\u0431\u0438_\u043e\u0442\u0440\u0438\u043c\u0430\u043d\u043d\u044f_\u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0443_section",
+  "produces",
+  "column_break_lnbu",
+  "produces_rec"
  ],
  "fields": [
   {
@@ -100,19 +113,86 @@
    "label": "\u0413\u043e\u043b\u043e\u0432\u043d\u0435"
   },
   {
-   "fieldname": "\u043f\u0435\u0440\u0435\u043b\u0456\u043a_\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0456\u0432_tab",
-   "fieldtype": "Tab Break",
-   "label": "\u041f\u0435\u0440\u0435\u043b\u0456\u043a \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0456\u0432"
-  },
-  {
    "fieldname": "docs",
    "fieldtype": "Table",
    "options": "CNAP Service Documents"
+  },
+  {
+   "fieldname": "tab_5_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u042f\u043a \u043e\u0442\u0440\u0438\u043c\u0430\u0442\u0438 \u0456 \u0449\u043e \u0434\u043b\u044f \u0446\u044c\u043e\u0433\u043e \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u043e"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Table",
+   "options": "Cnap Service Providers"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "\u0434\u0435_\u043e\u0442\u0440\u0438\u043c\u0430\u0442\u0438_section",
+   "fieldtype": "Section Break",
+   "label": "\u0414\u0435 \u043e\u0442\u0440\u0438\u043c\u0430\u0442\u0438"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "\u044f\u043a_\u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438_\u043f\u043e\u0441\u043b\u0443\u0433\u0443_section",
+   "fieldtype": "Section Break",
+   "label": "\u042f\u043a \u0437\u0430\u043c\u043e\u0432\u0438\u0442\u0438 \u043f\u043e\u0441\u043b\u0443\u0433\u0443"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "\u0445\u0442\u043e_\u043c\u043e\u0436\u0435_\u0437\u0432\u0435\u0440\u043d\u0443\u0442\u0438\u0441\u044f_section",
+   "fieldtype": "Section Break",
+   "label": "\u0425\u0442\u043e \u043c\u043e\u0436\u0435 \u0437\u0432\u0435\u0440\u043d\u0443\u0442\u0438\u0441\u044f"
+  },
+  {
+   "fieldname": "applicant_type",
+   "fieldtype": "Table MultiSelect",
+   "options": "Cnap Applicant Types"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438_\u0449\u043e_\u043d\u0435\u043e\u0431\u0445\u0456\u0434\u043d\u043e_\u043d\u0430\u0434\u0430\u0442\u0438_\u0434\u043b\u044f_\u043e\u0442\u0440\u0438\u043c\u0430\u043d\u043d\u044f_\u043f\u043e\u0441\u043b\u0443\u0433\u0438_section",
+   "fieldtype": "Section Break",
+   "label": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0438, \u0449\u043e \u043d\u0435\u043e\u0431\u0445\u0456\u0434\u043d\u043e \u043d\u0430\u0434\u0430\u0442\u0438 \u0434\u043b\u044f \u043e\u0442\u0440\u0438\u043c\u0430\u043d\u043d\u044f \u043f\u043e\u0441\u043b\u0443\u0433\u0438"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "\u0443\u043c\u043e\u0432\u0438_\u0456_\u0432\u0438\u043f\u0430\u0434\u043a\u0438_\u043d\u0430\u0434\u0430\u043d\u043d\u044f_section",
+   "fieldtype": "Section Break",
+   "label": "\u0423\u043c\u043e\u0432\u0438 \u0456 \u0432\u0438\u043f\u0430\u0434\u043a\u0438 \u043d\u0430\u0434\u0430\u043d\u043d\u044f"
+  },
+  {
+   "fieldname": "legal_base",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "fieldname": "how_order",
+   "fieldtype": "Small Text"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "\u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442_\u0442\u0430_\u0441\u043f\u043e\u0441\u043e\u0431\u0438_\u043e\u0442\u0440\u0438\u043c\u0430\u043d\u043d\u044f_\u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0443_section",
+   "fieldtype": "Section Break",
+   "label": "\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u0442\u0430 \u0441\u043f\u043e\u0441\u043e\u0431\u0438 \u043e\u0442\u0440\u0438\u043c\u0430\u043d\u043d\u044f \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0443"
+  },
+  {
+   "fieldname": "produces",
+   "fieldtype": "Table",
+   "options": "Cnap Service Produces"
+  },
+  {
+   "fieldname": "column_break_lnbu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "produces_rec",
+   "fieldtype": "Small Text"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-02 14:41:13.337328",
+ "modified": "2023-06-11 16:47:42.683819",
  "modified_by": "Administrator",
  "module": "Cnap",
  "name": "CNAP Service",
