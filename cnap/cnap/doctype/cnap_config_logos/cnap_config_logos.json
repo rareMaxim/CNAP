@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-11 22:31:59.014336",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "img",
+  "alt",
+  "link"
+ ],
+ "fields": [
+  {
+   "fieldname": "img",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Image URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link"
+  },
+  {
+   "fieldname": "alt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Alt Text",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-11 22:46:19.372039",
+ "modified_by": "Administrator",
+ "module": "Cnap",
+ "name": "Cnap Config Logos",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

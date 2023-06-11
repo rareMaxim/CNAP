@@ -9,7 +9,8 @@
  "field_order": [
   "office_name",
   "email",
-  "status"
+  "status",
+  "is_general"
  ],
  "fields": [
   {
@@ -29,11 +30,17 @@
    "in_list_view": 1,
    "label": "Status",
    "options": "\u041f\u0440\u0430\u0446\u044e\u0454\n\u041f\u0440\u0438\u0437\u0443\u043f\u0438\u043d\u0435\u043d\u0438\u0439\n\u041d\u0435 \u043f\u0440\u0430\u0446\u044e\u0454"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_general",
+   "fieldtype": "Check",
+   "label": "\u0413\u043e\u043b\u043e\u0432\u043d\u0438\u0439 \u043e\u0444\u0456\u0441"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-31 23:46:24.785406",
+ "modified": "2023-06-11 22:08:54.020054",
  "modified_by": "Administrator",
  "module": "Cnap",
  "name": "CNAP Office",

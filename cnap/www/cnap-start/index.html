@@ -7,17 +7,20 @@
   <section class="layout-item layout-item_bg layout-item_bg-header layout-item_bg-main-gradient">
     <div class="header-search">
       <div class="header-search__logos">
-        <a rel="nofollow" href="https://thedigital.gov.ua/" target="_blank"
+        {% for row in config.logo %}
+        {% if row.link %}
+        <a rel="nofollow" href="{{row.link}}" target="_blank"
           class="header-search__sm-hide layout-logo layout-logo_height-8">
-          <img class="layout-logo__icon" alt="Міністерство цифрової трансформації України"
-            src="assets/cnap/img/logo-mincifra.svg">
+          <img class="layout-logo__icon" alt="{{row.alt}}" src="{{row.img}}">
         </a>
-
+        {% else %}
         <span class="layout-logo layout-logo_height-8">
-          <img class="layout-logo__icon" alt="Реєстр адміністративних послуг" src="assets/cnap/img/logo-registry.svg">
+          <img class="layout-logo__icon" alt="{{row.alt}}" src="{{row.img}}">
         </span>
+        {% endif %}
+        {% endfor %}
       </div>
-      <h1 class="h1 header-search__title">Гід з державних послуг</h1>
+      <h1 class="h1 header-search__title">{{config.title}}</h1>
       <div class="header-input">
         <form method="GET" action="/search/">
           <input type="text" name="q" minlength="2" class="header-input__input"
