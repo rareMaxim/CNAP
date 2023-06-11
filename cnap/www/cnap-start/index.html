@@ -1,0 +1,356 @@
+﻿{% extends 'templates/cnap_base.html' %}
+
+{% block content %}
+
+<main class="layout-content">
+
+  <section class="layout-item layout-item_bg layout-item_bg-header layout-item_bg-main-gradient">
+    <div class="header-search">
+      <div class="header-search__logos">
+        <a rel="nofollow" href="https://thedigital.gov.ua/" target="_blank"
+          class="header-search__sm-hide layout-logo layout-logo_height-8">
+          <img class="layout-logo__icon" alt="Міністерство цифрової трансформації України"
+            src="assets/cnap/img/logo-mincifra.svg">
+        </a>
+
+        <span class="layout-logo layout-logo_height-8">
+          <img class="layout-logo__icon" alt="Реєстр адміністративних послуг" src="assets/cnap/img/logo-registry.svg">
+        </span>
+      </div>
+      <h1 class="h1 header-search__title">Гід з державних послуг</h1>
+      <div class="header-input">
+        <form method="GET" action="/search/">
+          <input type="text" name="q" minlength="2" class="header-input__input"
+            placeholder="Назва послуги або життєва ситуація" aria-label="Назва послуги або життєва ситуація">
+          <div class="header-input__help">
+
+
+            <a data-href="/help/search" class="header-input__help-highlight link js-help-search-modal">Як користуватися
+              пошуком послуг?</a>
+          </div>
+          <button class="header-input__button" type="submit" aria-label="Пошук">
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div>
+  </div>
+
+  <section class="layout-item">
+
+    <div class="layout-item__header layout-item__header_subtitle-end">
+      <h3 class="h1 layout-item__title">Меню послуг</h3>
+
+      <div class="layout-item__subtitle layout-item__subtitle_center d-none d-md-inline-flex">
+        <div class="button-wrap">
+          <a href="register/download/json/rejestr-administratyvnyh-poslug-02-06-2023-14-42.json"
+            class="button-primary button-wrap__item" type="submit">
+            Завантажити реєстр JSON
+          </a>
+          <a href="register/download/xlsx/rejestr-administratyvnyh-poslug-02-06-2023-14-44.xlsx"
+            class="button-primary button-wrap__item" type="submit">
+            Завантажити реєстр EXCEL
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="link-block-list layout-item__body">
+
+
+      <!-- <section class="slider link-block-slider">
+      <div class="slider-container">
+          <div>
+              <div class="slider-item">
+                  <h5 class="slider-item__item h4">Не знайшли послугу?</h5>
+                  <div class="slider-item__item">
+                      Гід з державних послуг містить інформацію про всі наявні державні послуги. Не знайшли послугу, що шукали? Напишіть нам і ми спробуємо допомогти.
+                  </div>
+  
+                  <a data-href="/feedback/modal" data-title="Зворотний зв'язок" class="slider-item__item button-primary js-feedback-modal">
+                      Написати
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section> -->
+      {% for them in them_areas %}
+      <a href="thematic-area/{{them.name}}" class="link-block-item">
+        <!--   <a
+                  href="/register/thematic-area/3"
+                  class="link-block-item"
+              > -->
+        <span class="link-block-item__title h3">
+          {{them.name}}
+        </span>
+
+        <span class="link-block-item__description">
+          {{them.description}}
+
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <section class="d-block d-md-none">
+      <div class="button-wrap mg-t-25">
+        <a href="register/download/json/rejestr-administratyvnyh-poslug-02-06-2023-14-42.json"
+          class="button-primary button-wrap__item" type="submit">
+          Завантажити реєстр JSON
+        </a>
+        <a href="register/download/xlsx/rejestr-administratyvnyh-poslug-02-06-2023-14-44.xlsx"
+          class="button-primary button-wrap__item" type="submit">
+          Завантажити реєстр EXCEL
+        </a>
+      </div>
+    </section>
+  </section>
+
+  <section class="layout-item slider-index">
+
+
+    <!-- <section class="slider ">
+      <div class="slider-container">
+          <div>
+              <div class="slider-item">
+                  <h5 class="slider-item__item h4">Не знайшли послугу?</h5>
+                  <div class="slider-item__item">
+                      Гід з державних послуг містить інформацію про всі наявні державні послуги. Не знайшли послугу, що шукали? Напишіть нам і ми спробуємо допомогти.
+                  </div>
+  
+                  <a data-href="/feedback/modal" data-title="Зворотний зв'язок" class="slider-item__item button-primary js-feedback-modal">
+                      Написати
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section> -->
+  </section>
+
+  <section class="layout-item layout-item_bg">
+    <div class="layout-item__header layout-item__header_subtitle-middle">
+      <h3 class="h1 layout-item__title">Життєві події та ситуації</h3>
+
+      <div class="layout-item__subtitle">
+        <div class="events-subtitle">
+          Що варто знати, куди звертатись та як діяти у випадку приємних та не дуже, очікуваних або несподіваних подій
+          та ситуацій
+        </div>
+      </div>
+    </div>
+
+    <div class="events layout-item__body">
+      <div class="events__item list-box">
+        <div class="list-box__title dropdown-arrow" data-toggle="collapse" data-target="#collapse-1"
+          aria-expanded="true">
+          Для громадян<i class="list-box__icon fas fa-caret-down dropdown-arrow__icon"></i>
+        </div>
+
+        <div id="collapse-1" class="collapse show list-box-collapse">
+          <div class="list-box__body list-margin">
+
+            <a class="h6 list-margin__item link" href="event/viiskovyi-stan-bb918dcd-6592-4cc6-9201-9b51a73bc2f0.html">
+              Мені потрібна допомога під час війни
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/None">
+              Ветеранам війни
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/simeini-vidnosyny.html">
+              Я хочу створити сім&#39;ю
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/narodzhennia-dytyny-a4516cd8-c189-40aa-85f1-157b26273fc1.html">
+              У мене народилася дитина
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/prydbannia-zhytla.html">
+              Я планую придбати житло
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/otrymannia-sotsialnoho-zakhystu-f957ce08-c467-4eea-a30e-e9e78db7797e.html">
+              Я потребую соціального захисту
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/vykhid-na-pensiiu.html">
+              Я планую вийти на пенсію
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/smert.html">
+              Мені потрібно вирішити питання, пов&#39;язані з похованням
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/otrymannia-obmin-abo-vidnovlennia-pasportnoho-dokumentu.html">
+              Я хочу отримати паспортні послуги
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/pereizd-na-nove-mistse-prozhyvannia-feeb493b-1460-4c6d-9a5d-716366d7e739.html">
+              Я планую змінити місце проживання
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/trudovi-vidnosyny-43595a5c-8115-478b-adfa-4c78a4d51eba.html">
+              Мене цікавлять трудові правовідносини
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/zemelni-pytannia-7cb0fca3-eee7-4868-a169-96a393b52420.html">
+              Мені потрібно вирішити земельні питання
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/keruvannia-transportnym-zasobom.html">
+              Я хочу керувати транспортним засобом
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/immihratsiia-ta-zakhyst-v-ukraini-cac04f44-8a0c-4891-8b26-0116c37311dc.html">
+              Я хочу переїхати в Україну
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/pereizd-za-kordon.html">
+              Я планую переїзд за кордон
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/vnutrishno-peremishchena-osoba-6b312726-76e0-402f-9bcf-db880d7a2443.html">
+              Я хочу підтвердити статус або отримати допомогу, як внутрішньо переміщена особа
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/hromadska-diialnist-3f2af87f-6f26-46c0-bfe3-c48f86222d14.html">
+              Я хочу займатися громадською діяльністю
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/zainiattia-myslyvstvom.html">
+              Я хочу займатися мисливством
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/investuvannia-2c1e54d5-668e-4e5a-8c03-c11f2c14ebdc.html">
+              Я планую займатися інвестуванням
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/nezalezhna-profesiina-diialnist-9ace8bef-9dbf-4630-8809-d51d1de585ef.html">
+              Я планую провадити незалежну професійну діяльність
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/diialnist-u-sferi-intelektualnoi-vlasnosti-8e294486-f737-42ae-9c97-0bf257a87e55.html">
+              Я планую діяльність у сфері інтелектуальної власності
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/otrymannia-dozvolu-na-zbroiu.html">
+              Я хочу отримати дозвіл на зброю
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/pratsevlashtuvannia-inozemtsiv-ta-osib-bez-hromadianstva-v-ukraini.html">
+              Працевлаштування іноземців та осіб без громадянства в Україні
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="events__item list-box">
+        <div class="list-box__title dropdown-arrow" data-toggle="collapse" data-target="#collapse-2"
+          aria-expanded="true">
+          Для бізнесу<i class="list-box__icon fas fa-caret-down dropdown-arrow__icon"></i>
+        </div>
+
+        <div id="collapse-2" class="collapse show list-box-collapse">
+          <div class="list-box__body list-margin">
+
+            <a class="h6 list-margin__item link"
+              href="event/hospodarska-diialnist-b298a0cd-721a-4695-8282-0ef6c41ba273.html">
+              Я хочу відкрити власний бізнес
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/administruvannia-ta-splata-podatkiv.html">
+              Я хочу правильно сплачувати усі податки
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/profesiina-diialnist-dlia-biznesu.html">
+              Я планую займатися професійними видами діяльності
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/rozvytok-budivelnoi-diialnosti.html">
+              Я планую діяльність у сфері будівництва й нерухомості
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/diialnist-u-sferi-silskoho-hospodarstva.html">
+              Я планую займатися сільськогосподарською діяльністю
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/vykorystannia-zemli-ta-ekolohichna-bezpeka-662f56bd-3314-4463-9702-c3357fc59f18.html">
+              Я планую діяльність пов&#39;язану з використанням землі або екологічною безпекою
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/diialnist-u-sferi-transportu-bc1cd85a-791b-4399-a0b5-a4948c597a40.html">
+              Я планую діяльність у сфері транспорту
+            </a>
+
+            <a class="h6 list-margin__item link" href="event/otrymannia-patentiv-ta-reiestratsiia-avtorskykh-prav.html">
+              Я хочу захистити свою інтелектуальну власність
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/diialnist-u-sferi-finansovykh-posluh-abo-strakhuvannia-a2a49985-b61a-4c29-81a2-8a1b76743f16.html">
+              Я планую діяльність, яка стосується фінансових послуг або страхування
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/diialnist-u-sferi-tekhnichnoho-rehuliuvannia-abo-metrolohii-a313f548-70ff-4aff-a3c8-ac4dda801606.html">
+              Я планую діяльність у сфері технічного регулювання або метрології
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/mytne-rehuliuvannia-zovnishnoekonomichnoi-diialnosti-d803b65e-5117-40df-b1b9-0677bc5a0b6b.html">
+              Я планую проведення операцій у зовнішньоекономічній діяльності
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/diialnist-u-sferi-okhorony-bezpeky-chy-zakhystu-3a357112-63a6-416c-b0f9-f829a49dbfca.html">
+              Я планую запровадження діяльності, яка стосується охорони, безпеки чи захисту
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/diialnist-u-sferi-zviazku-ta-informatyzatsii-8d3a7a2d-70db-454e-bd71-be1de11215af.html">
+              Я планую діяльність у сфері зв&#39;язку та інформатизації
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/diialnist-u-sferi-enerhetyky-ta-komunalnykh-posluh-a3ba6407-6f35-47b8-a4c0-0344638034f0.html">
+              Я планую діяльність у сфері енергетики, палива або комунальних послуг
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/zainiattia-relihiinoiu-diialnistiu-6f26fc49-311c-4e96-9253-5fce3abd65f2.html">
+              Я планую займатися релігійною діяльністю
+            </a>
+
+            <a class="h6 list-margin__item link"
+              href="event/vyrobnytstvo-ta-obih-okremykh-vydiv-produktsii-dlia-biznesu.html">
+              Я планую займатися виробництвом або введенням в обіг окремих видів продукції
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+
+{% endblock %}

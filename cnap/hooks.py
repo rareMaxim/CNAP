@@ -1,4 +1,5 @@
 from . import __version__ as app_version
+from cnap.route import routes as url_route
 
 app_name = "cnap"
 app_title = "Cnap"
@@ -44,6 +45,7 @@ app_license = "MIT"
 # role_home_page = {
 #	"Role": "home_page"
 # }
+
 
 # Generators
 # ----------
@@ -199,3 +201,5 @@ app_license = "MIT"
 # auth_hooks = [
 #	"cnap.auth.validate"
 # ]
+
+website_route_rules = url_route

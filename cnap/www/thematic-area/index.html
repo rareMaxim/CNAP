@@ -1,0 +1,71 @@
+﻿{% extends 'templates/cnap_base.html' %}
+
+{% block content %}
+
+<main class="layout-content">
+
+    <div class="layout-item">
+
+        <div class="breadcrumbs">
+
+            <a href="../index.htm" class="breadcrumbs-item">
+                Головна
+            </a>
+
+            <a class="breadcrumbs-item">
+                {{ area }}
+            </a>
+
+        </div>
+
+
+        <div class="layout-item__header layout-item__header_subtitle-end">
+            <h1 class="layout-item__title h1">
+                {{ area }}
+            </h1>
+
+            <div class="layout-item__subtitle layout-item__subtitle_center">
+                <div class="button-wrap">
+                    <a href='../register/thematic-area/29/download/json/rejestr-administratyvnyh-poslug-29.json'
+                        class="button-primary button-wrap__item" type="submit">
+                        Завантажити JSON
+                    </a>
+                    <a href="../register/thematic-area/29/download/xlsx/rejestr-administratyvnyh-poslug-29.xlsx"
+                        class="button-primary button-wrap__item" type="submit">
+                        Завантажити EXCEL
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion layout-item__body">
+            {% for sector in sectors %}
+            <div class="accordion-item js-accordion-noajax">
+                <div class="accordion-item__header js-header-collapse" data-toggle="collapse" aria-expanded="true"
+                    data-target="#thematic-area-101">
+                    <h3 class="h3 accordion-item__title">
+                        {{ sector.name }}
+
+                    </h3>
+                </div>
+
+                <div id="thematic-area-101" class="collapse js-list-collapse show">
+                    <div class="accordion-item__body list-margin">
+                        {% for service in sector.services %}
+
+                        <a class="list-margin__item link h6"
+                            href="/service/{{service.identifier}}">
+                            {{ service.keyword }}
+                        </a>
+                        {% endfor %}
+
+                        <div style="display: none;" class="mg-t-25 mg-md-t-40 js-load-more">
+                            <a class="button-outline wd-100p wd-md-auto">Показати ще</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% endblock %}
