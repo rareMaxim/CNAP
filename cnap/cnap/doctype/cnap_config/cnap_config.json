@@ -1,6 +1,4 @@
 {
- "_comments": "[]",
- "_liked_by": "[]",
  "actions": [],
  "allow_rename": 1,
  "creation": "2023-06-11 18:59:18.584303",
@@ -11,7 +9,9 @@
  "field_order": [
   "service_mode",
   "title",
-  "logo"
+  "logo",
+  "\u0441\u043e\u0446\u0456\u0430\u043b\u044c\u043d\u0456_\u043c\u0435\u0440\u0435\u0436\u0456_tab",
+  "social_links"
  ],
  "fields": [
   {
@@ -31,12 +31,22 @@
    "fieldtype": "Table",
    "label": "\u041b\u043e\u0433\u043e \u043d\u0430 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0456\u0439",
    "options": "Cnap Config Logos"
+  },
+  {
+   "fieldname": "\u0441\u043e\u0446\u0456\u0430\u043b\u044c\u043d\u0456_\u043c\u0435\u0440\u0435\u0436\u0456_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0421\u043e\u0446\u0456\u0430\u043b\u044c\u043d\u0456 \u043c\u0435\u0440\u0435\u0436\u0456"
+  },
+  {
+   "fieldname": "social_links",
+   "fieldtype": "Table",
+   "options": "Cnap Social Links"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-06-11 22:34:34.396790",
+ "modified": "2023-06-17 22:59:50.504498",
  "modified_by": "Administrator",
  "module": "Cnap",
  "name": "Cnap Config",
