@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2023-06-24 10:06:42.417518",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "time",
+  "photo",
+  "war_line",
+  "column_break_naap",
+  "title",
+  "adress",
+  "section_break_adht",
+  "latitude",
+  "column_break_dlqi",
+  "longitude",
+  "column_break_vbrc",
+  "coord",
+  "section_break_faxx",
+  "description",
+  "column_break_cdkn",
+  "geolocation_mtkf"
+ ],
+ "fields": [
+  {
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "\u0427\u0430\u0441"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "\u0428\u0438\u0440\u043e\u0442\u0430"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "\u0414\u043e\u0432\u0433\u043e\u0442\u0430"
+  },
+  {
+   "fieldname": "column_break_naap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_adht",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_dlqi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_faxx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "\u041e\u043f\u0438\u0441"
+  },
+  {
+   "fieldname": "column_break_cdkn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "geolocation_mtkf",
+   "fieldtype": "Geolocation"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "\u041d\u0430\u0437\u0432\u0430",
+   "unique": 1
+  },
+  {
+   "fieldname": "adress",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0410\u0434\u0440\u0435\u0441\u0430"
+  },
+  {
+   "default": "0",
+   "fieldname": "photo",
+   "fieldtype": "Check",
+   "label": "\u0424\u043e\u0442\u043e\u0444\u0456\u043a\u0441\u0430\u0446\u0456\u044f"
+  },
+  {
+   "fieldname": "column_break_vbrc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coord",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "\u0422\u043e\u0447\u043a\u0430 \u0444\u0456\u043a\u0441\u0430\u0446\u0456\u0457",
+   "options": "f\"{doc.latitude} {doc.longitude}\"",
+   "read_only": 1
+  },
+  {
+   "fieldname": "war_line",
+   "fieldtype": "Int",
+   "label": "\u041f\u0440\u0438\u0431\u043b\u0438\u0437\u043d\u0430 \u0432\u0456\u0434\u0441\u0442\u0430\u043d\u044c \u0434\u043e \u041b\u0411\u0417",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-25 22:55:58.339926",
+ "modified_by": "Administrator",
+ "module": "Cnap",
+ "name": "War Data",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}
