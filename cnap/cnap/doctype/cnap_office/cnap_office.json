@@ -7,10 +7,21 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "office_short_name",
   "office_name",
-  "email",
   "status",
-  "is_general"
+  "is_general",
+  "column_break_dssi",
+  "email",
+  "phone",
+  "phone_boss",
+  "section_break_jssg",
+  "adress",
+  "btn_get_adress",
+  "longitude",
+  "latitude",
+  "column_break_ifmx",
+  "map"
  ],
  "fields": [
   {
@@ -36,11 +47,64 @@
    "fieldname": "is_general",
    "fieldtype": "Check",
    "label": "\u0413\u043e\u043b\u043e\u0432\u043d\u0438\u0439 \u043e\u0444\u0456\u0441"
+  },
+  {
+   "fieldname": "office_short_name",
+   "fieldtype": "Data",
+   "label": "\u041a\u043e\u0440\u043e\u0442\u043a\u0430 \u043d\u0430\u0437\u0432\u0430 \u0426\u041d\u0410\u041f"
+  },
+  {
+   "fieldname": "section_break_jssg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "adress",
+   "fieldtype": "Small Text",
+   "label": "\u0410\u0434\u0440\u0435\u0441\u0430"
+  },
+  {
+   "fieldname": "column_break_ifmx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "\u0414\u043e\u0432\u0436\u0438\u043d\u0430"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "\u0428\u0438\u0440\u0438\u043d\u0430"
+  },
+  {
+   "fieldname": "btn_get_adress",
+   "fieldtype": "Button",
+   "label": "\u041e\u0442\u0440\u0438\u043c\u0430\u0442\u0438 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u0438 \u0437 \u0430\u0434\u0435\u0440\u0441\u0443"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Geolocation"
+  },
+  {
+   "default": "+380-",
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "\u041d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0443"
+  },
+  {
+   "fieldname": "column_break_dssi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "+380-",
+   "fieldname": "phone_boss",
+   "fieldtype": "Phone",
+   "label": "\u041d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0443 \u043a\u0435\u0440\u0456\u0432\u043d\u0438\u043a\u0430"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-11 22:08:54.020054",
+ "modified": "2023-07-12 11:31:33.272512",
  "modified_by": "Administrator",
  "module": "Cnap",
  "name": "CNAP Office",
@@ -79,5 +143,5 @@
    "title": "\u041d\u0435 \u043f\u0440\u0430\u0446\u044e\u0454"
   }
  ],
- "title_field": "office_name"
+ "title_field": "office_short_name"
 }

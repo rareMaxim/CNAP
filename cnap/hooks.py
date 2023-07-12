@@ -203,3 +203,7 @@ app_license = "MIT"
 # ]
 
 website_route_rules = url_route
+
+app_include_js = [
+    "/assets/cnap/js/map_defaults.js"
+]

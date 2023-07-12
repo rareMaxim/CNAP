@@ -1,18 +1,18 @@
 {
  "charts": [],
- "content": "[{\"id\":\"EFGfiDPW1p\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h1\\\">\u0406\u0421 \\\"\u0426\u041d\u0410\u041f\\\"</span>\",\"col\":12}},{\"id\":\"KoBi0ybY6-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cnap Config\",\"col\":3}},{\"id\":\"jaln8DT6jO\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"MiNJzQcb49\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b><span class=\\\"h3\\\">\u0412\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0456</span></b></span>\",\"col\":12}},{\"id\":\"MLDjjHamSs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0414\u043e\u0434\u0430\u0442\u0438 \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0430\",\"col\":3}},{\"id\":\"EppxDuwIE7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0412\u0441\u0456 \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0456\",\"col\":3}},{\"id\":\"HHEUIvEpe6\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">\u041d\u0430\u0434\u0430\u043d\u043d\u044f \u043f\u043e\u0441\u043b\u0443\u0433</span>\",\"col\":12}},{\"id\":\"T9VPrXxcDs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u041d\u0430\u0434\u0430\u0442\u0438 \u043f\u043e\u0441\u043b\u0443\u0433\u0443\",\"col\":3}},{\"id\":\"vFN5TM91sK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u041d\u0430\u0434\u0430\u043d\u043e \u043f\u043e\u0441\u043b\u0443\u0433\",\"col\":3}},{\"id\":\"hmZfdP6qi0\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>\u041a\u0435\u0440\u0443\u0432\u0430\u043d\u043d\u044f \u043f\u043e\u0441\u043b\u0443\u0433\u0430\u043c\u0438</b></span>\",\"col\":12}},{\"id\":\"uBqT9EXIGR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u041f\u043e\u0441\u043b\u0433\u0443\u0438\",\"col\":3}}]",
+ "content": "[{\"id\":\"EFGfiDPW1p\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h1\\\">\u0406\u0421 \\\"\u0426\u041d\u0410\u041f\\\"</span>\",\"col\":12}},{\"id\":\"V0ANmb7Tsr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0426\u041d\u0410\u041f\u0438\",\"col\":3}},{\"id\":\"KoBi0ybY6-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cnap Config\",\"col\":3}},{\"id\":\"jaln8DT6jO\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"MiNJzQcb49\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b><span class=\\\"h3\\\">\u0412\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0456</span></b></span>\",\"col\":12}},{\"id\":\"MLDjjHamSs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0414\u043e\u0434\u0430\u0442\u0438 \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0430\",\"col\":3}},{\"id\":\"EppxDuwIE7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u0412\u0441\u0456 \u0432\u0456\u0434\u0432\u0456\u0434\u0443\u0432\u0430\u0447\u0456\",\"col\":3}},{\"id\":\"HHEUIvEpe6\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">\u041d\u0430\u0434\u0430\u043d\u043d\u044f \u043f\u043e\u0441\u043b\u0443\u0433</span>\",\"col\":12}},{\"id\":\"T9VPrXxcDs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u041d\u0430\u0434\u0430\u0442\u0438 \u043f\u043e\u0441\u043b\u0443\u0433\u0443\",\"col\":3}},{\"id\":\"vFN5TM91sK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u041d\u0430\u0434\u0430\u043d\u043e \u043f\u043e\u0441\u043b\u0443\u0433\",\"col\":3}},{\"id\":\"hmZfdP6qi0\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>\u041a\u0435\u0440\u0443\u0432\u0430\u043d\u043d\u044f \u043f\u043e\u0441\u043b\u0443\u0433\u0430\u043c\u0438</b></span>\",\"col\":12}},{\"id\":\"uBqT9EXIGR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\u041f\u043e\u0441\u043b\u0443\u0433\u0438\",\"col\":3}}]",
  "creation": "2023-05-31 22:00:55.509880",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "add-round",
+ "icon": "milestone",
  "idx": 0,
  "is_hidden": 0,
  "label": "\u0426\u041d\u0410\u041f",
  "links": [],
- "modified": "2023-06-17 01:31:16.232964",
+ "modified": "2023-07-11 20:45:50.180100",
  "modified_by": "Administrator",
  "module": "Cnap",
  "name": "\u0426\u041d\u0410\u041f",
@@ -35,11 +35,10 @@
    "type": "DocType"
   },
   {
-   "color": "Green",
+   "color": "Grey",
    "doc_view": "List",
-   "label": "\u041f\u043e\u0441\u043b\u0433\u0443\u0438",
-   "link_to": "CNAP Service",
-   "stats_filter": "{\"name\":[\"is\",\"set\"]}",
+   "label": "\u0426\u041d\u0410\u041f\u0438",
+   "link_to": "CNAP Office",
    "type": "DocType"
   },
   {
@@ -47,6 +46,14 @@
    "doc_view": "List",
    "label": "Cnap Config",
    "link_to": "Cnap Config",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "\u041f\u043e\u0441\u043b\u0443\u0433\u0438",
+   "link_to": "CNAP Service",
+   "stats_filter": "{\"name\":[\"is\",\"set\"]}",
    "type": "DocType"
   },
   {
